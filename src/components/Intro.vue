@@ -16,7 +16,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .intro {
 	width: 60%;
 	margin: 0 auto;

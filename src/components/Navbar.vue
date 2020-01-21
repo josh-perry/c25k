@@ -1,24 +1,24 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
+      <a class="navbar-item" href="/">
         <img src="http://placekitten.com/112/28" width="112" height="28">
       </a>
     </div>
 
     <div class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item" href="https://www.nhs.uk/live-well/exercise/couch-to-5k-week-by-week/">
+        <a class="navbar-item" href="/">
           What's C25k?
         </a>
 
-        <a class="navbar-item" href="/guide">
+        <router-link to="/guide" class="navbar-item">
           Guide
-        </a>
+        </router-link>
       </div>
     </div>
   </nav>
 </template>
 
-<style>
+<style scoped>
 </style>
