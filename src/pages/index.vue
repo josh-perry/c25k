@@ -1,12 +1,10 @@
 <template>
-  <div class="container">
-    <div>
-      <h1 class="title">
-        Couch to 5k
-      </h1>
+  <div>
+    <h1 class="title">
+      Couch to 5k
+    </h1>
 
-      <Intro/>
-    </div>
+    <Intro/>
   </div>
 </template>
 
@@ -21,18 +19,6 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  margin: 0 auto;
-  max-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  padding-top: 2%;
-  padding-bottom: 5%;
-}
-
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -41,5 +27,6 @@ export default {
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
+  text-align: center;
 }
 </style>

@@ -29,8 +29,4 @@
 .image-gallery img {
   margin: 8px;
 }
-
-p {
-  text-align: left;
-}
 </style>
