@@ -37,7 +37,7 @@ export default {
       ]
     }
 
-    this.weekData.days = Data[this.week];
+    this.weekData.days = Data[this.week-1];
   }
 }
 </script>
