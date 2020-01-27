@@ -4,15 +4,16 @@
 
     <div
         class="day"
-        v-for="d, i in week.days">
+        v-for="day, i in week.days">
 
       <h3>Day {{ i + 1 }}</h3>
 
       <ul>
-        <li v-for="step in d">
+        <li v-for="step in day">
           {{ step }}
         </li>
       </ul>
+
     </div>
   </div>
 </template>

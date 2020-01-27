@@ -1,29 +1,26 @@
 <template>
   <div class="guide">
-    <div class="buttons">
-      <button
-          class="button"
-          v-for="w in weeks"
-          v-bind:class="{'is-primary': w.done }"
-          @click="weekClicked(w)">
-
-        {{ w.text }}
-      </button>
+    <div class="left">
+      <WeekMenu/>
     </div>
 
-    <Week
-      v-if="selectedWeek"
-      :week="selectedWeek"/>
+    <div class="right">
+      <Week
+        v-if="selectedWeek"
+        :week="selectedWeek"/>
+    </div>
   </div>
 </template>
 
 <script>
 import Data from '~/static/data.json'
 import Week from '~/components/Week.vue'
+import WeekMenu from '~/components/WeekMenu.vue'
 
 export default {
   components: {
-    Week
+    Week,
+    WeekMenu
   },
 
   data() {
@@ -63,5 +60,14 @@ export default {
 .guide {
 	width: 60%;
 	margin: 0 auto;
+  display: flex;
+}
+
+.left {
+  flex: 0 0 20%;
+}
+
+.right {
+  flex: 1;
 }
 </style>
