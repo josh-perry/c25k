@@ -7,7 +7,11 @@
             class="navbar-item"
             v-bind:class="{'is-active': index+1 == selectedWeek}">
 
-          Week {{ w }}
+          <span>
+            Week {{ w }}
+          </span>
+
+          <i v-if="w <= 3" class="fa fa-check"></i>
         </router-link>
       </li>
     </ul>
@@ -30,9 +34,6 @@ export default {
 
   mounted() {
     this.weeks = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  },
-
-  methods: {
   }
 }
 
@@ -50,6 +51,10 @@ export default {
 
 .day {
   margin: 2%;
+}
+
+i {
+  padding-left: 8px;
 }
 
 li {
