@@ -1,6 +1,19 @@
 <template>
   <aside class="menu">
     <ul class="menu-list">
+      <li>
+        <router-link
+            to="/guide"
+            class="navbar-item">
+
+          <span>
+            Overview
+          </span>
+
+          <i class="fa fa-check"></i>
+        </router-link>
+      </li>
+
       <li v-for="w, index in weeks">
         <router-link
             :to="`/guide/${w}`"
@@ -54,7 +67,7 @@ export default {
 }
 
 i {
-  padding-left: 8px;
+  float: right;
 }
 
 li {

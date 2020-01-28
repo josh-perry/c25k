@@ -5,9 +5,12 @@
     </div>
 
     <div class="right">
+      <GuideIndexText/>
+
       <Week
         v-if="selectedWeek"
         :week="selectedWeek"/>
+
     </div>
   </div>
 </template>
@@ -16,11 +19,13 @@
 import Data from '~/static/data.json'
 import Week from '~/components/Week.vue'
 import WeekMenu from '~/components/WeekMenu.vue'
+import GuideIndexText from '~/components/GuideIndexText.vue'
 
 export default {
   components: {
     Week,
-    WeekMenu
+    WeekMenu,
+    GuideIndexText
   },
 
   data() {
@@ -58,13 +63,11 @@ export default {
 }
 
 .guide {
-	width: 60%;
-	margin: 0 auto;
   display: flex;
 }
 
 .left {
-  flex: 0 0 20%;
+  flex: 0 0 30%;
 }
 
 .right {
