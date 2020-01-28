@@ -1,3 +1,8 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/c25k'
+  }
+} : {}
 
 export default {
   mode: 'universal',
@@ -63,5 +68,7 @@ export default {
     */
     extend (config, ctx) {
     }
-  }
+  },
+
+  ...routerBase
 }
